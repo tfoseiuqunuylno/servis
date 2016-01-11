@@ -20,6 +20,10 @@
             android:name=".MobileBimNedir"
             android:label="@string/title_activity_nedir" >
         </activity>
+        <activity
+            android:name=".AnaActivity"
+            android:label="@string/title_activity_ana" >
+        </activity>
     </application>
 
 </manifest>

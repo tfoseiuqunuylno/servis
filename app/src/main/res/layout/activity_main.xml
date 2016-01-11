@@ -16,7 +16,12 @@
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
-        android:text="GİRİŞ" />
+        android:text="GİRİŞ"
+        android:background="#E20808"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        />
 
     <Button
         android:id="@+id/buttonKaydol"
@@ -80,15 +85,6 @@
 
             />
     </FrameLayout>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_below="@+id/buttonKaydol"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="37dp" />
 
 
 </RelativeLayout>

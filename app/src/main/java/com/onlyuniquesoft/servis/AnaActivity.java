@@ -1,44 +1,22 @@
 package com.onlyuniquesoft.servis;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
-Button nedir,btnGiris;
+public class AnaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        btnGiris=(Button)findViewById(R.id.buttonGiris);
-        btnGiris.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentAna = new Intent(MainActivity.this,AnaActivity.class);
-                startActivity(intentAna);
-            }
-        });
-
-
-        nedir=(Button)findViewById(R.id.nedir);
-        nedir.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,MobileBimNedir.class);
-                startActivity(intent);
-            }
-        });
+        setContentView(R.layout.activity_ana);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_ana, menu);
         return true;
     }
 

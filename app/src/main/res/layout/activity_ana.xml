@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.onlyuniquesoft.servis.AnaActivity"
+    >
+
+    <TextView android:text="Hoşgeldin Ahmet" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtVmesaj" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+
+     >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Siparis Ver"
+            android:id="@+id/buttonSiparisVer"
+            android:layout_margin="0dp"
+            android:layout_below="@+id/txtVmesaj"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ürünlerimiz"
+            android:id="@+id/buttonUrunlerimiz"
+            android:layout_below="@+id/buttonSiparisVer"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="0dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="İndirimler"
+            android:id="@+id/buttonIndirimler"
+            android:layout_below="@+id/buttonUrunlerimiz"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="0dp"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="@drawable/bim"
+        android:layout_below="@+id/txtVmesaj"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

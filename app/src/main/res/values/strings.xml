@@ -5,4 +5,5 @@
     <string name="action_settings">Settings</string>
     <color name="red">#E20808</color>
     <string name="title_activity_nedir">nedir</string>
+    <string name="title_activity_ana">AnaActivity</string>
 </resources>
