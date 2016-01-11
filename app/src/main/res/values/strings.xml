@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MOBILE BIM</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <color name="red">#E20808</color>
+</resources>
