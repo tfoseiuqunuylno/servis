@@ -1,59 +1,85 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    tools:context=".MainActivity">
 
 
     <Button
+        android:id="@+id/buttonGiris"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="GİRİŞ"
-        android:id="@+id/buttonGiris"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp" />
+        android:layout_marginTop="35dp"
+        android:text="GİRİŞ" />
 
     <Button
+        android:id="@+id/buttonKaydol"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Kaydol"
-        android:id="@+id/buttonKaydol"
         android:layout_below="@+id/buttonGiris"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:text="Kaydol" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Şifremi Unuttum ?"
         android:id="@+id/textView2"
-        android:layout_below="@+id/editTextSifre"
-        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextSifre"
+        android:allowUndo="false"
         android:autoText="false"
-        android:allowUndo="false" />
+        android:text="Şifremi Unuttum ?"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="phone"
-        android:hint="Telefon"
-        android:ems="10"
         android:id="@+id/editTextTelefon"
-
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:ems="10"
+
+        android:hint="Telefon"
+        android:inputType="phone" />
+
+    <EditText
         android:id="@+id/editTextSifre"
-        android:hint="Şifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/editTextTelefon"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Şifre"
+        android:inputType="textPassword" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#E20808"
+        android:padding="3sp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MobileBim Nedir?"
+            android:textSize="20sp"
+            android:id="@+id/nedir"
+            android:textColor="#E20808"
+            android:background="#fff"
+
+
+            />
+    </FrameLayout>
+
 
 </RelativeLayout>
