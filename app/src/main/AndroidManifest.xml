@@ -22,7 +22,22 @@
         </activity>
         <activity
             android:name=".AnaActivity"
-            android:label="@string/title_activity_ana" >
+            android:label="@string/title_activity_ana"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" >
+            </meta-data>
+        </activity>
+        <activity
+            android:name=".ReyonActivity"
+            android:label="@string/title_activity_reyon"
+            android:parentActivityName=".AnaActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AnaActivity" >
+            </meta-data>
         </activity>
     </application>
 

@@ -6,4 +6,5 @@
     <color name="red">#E20808</color>
     <string name="title_activity_nedir">nedir</string>
     <string name="title_activity_ana">AnaActivity</string>
+    <string name="title_activity_reyon">ReyonActivity</string>
 </resources>
