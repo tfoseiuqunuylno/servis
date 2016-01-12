@@ -60,7 +60,10 @@ public class ReyonAdaptor extends BaseAdapter {
             @Override
             public void onClick(View v) {
 
-                    Intent intent = new Intent(activity, KategorilerActivity.class);
+
+                String gonderilenReyonIsmi=reyon.getIsim().toString();
+                Intent intent = new Intent(activity, KategorilerActivity.class);
+                intent.putExtra("reyonIsmi",gonderilenReyonIsmi); //MainActivity içerisinde  girilen text deki degeri gönderiyor.
                 activity.startActivity(intent);
 
             }

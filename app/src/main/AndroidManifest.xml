@@ -58,6 +58,15 @@
             </meta-data>
             >
         </activity>
+        <activity
+            android:name=".UrunlerActivity"
+            android:label="URUNLER"
+            android:parentActivityName=".KategorilerActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".KategorilerActivity" >
+            </meta-data>
+        </activity>
     </application>
 
 </manifest>

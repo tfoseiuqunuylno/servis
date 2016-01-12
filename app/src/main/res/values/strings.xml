@@ -9,4 +9,5 @@
     <string name="title_activity_reyon">REYONLAR</string>
     <string name="title_activity_kayit">KAYDOL</string>
     <string name="title_activity_kategoriler">KATEGORILER</string>
+    <string name="title_activity_urunler">UrunlerActivity</string>
 </resources>

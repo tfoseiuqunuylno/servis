@@ -10,51 +10,49 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class KategorilerActivity extends AppCompatActivity {
-
-    ListView listViewKategori;
-    List<Kategori> kategoriler = new ArrayList<Kategori>();
+public class UrunlerActivity extends AppCompatActivity {
+    ListView listView;
+    List<Urun> urunler = new ArrayList<Urun>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kategoriler);
-
+        setContentView(R.layout.activity_urunler);
 
         android.support.v7.app.ActionBar actionBar=getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        listViewKategori = (ListView) findViewById(R.id.listViewKategoriler);
+        listView = (ListView) findViewById(R.id.listViewUrunler);
 
         Intent intent=getIntent(); //Gelen intetnti çekiyoruz.
-        String gelenReyonIsmi=intent.getStringExtra("reyonIsmi"); //Veri türündeki verimizi çekiyoruz
+        String gelenKategoriIsmi=intent.getStringExtra("kategoriIsmi"); //Veri türündeki verimizi çekiyoruz
 
-
-        if(gelenReyonIsmi.equals("Meyve Sebze")) {
-            kategoriler.add(new Kategori("Meyve"));
-            kategoriler.add(new Kategori("Sebze"));
+        if(gelenKategoriIsmi.equals("Meyve"))
+        {
+            urunler.add(new Urun("kivi", 3.0));
+            urunler.add(new Urun("muz", 0.5));
+            urunler.add(new Urun("elma", 1.0));
+            urunler.add(new Urun("cilek", 1.0));
         }
-        if(gelenReyonIsmi.equals("Gıda,Şekerleme")) {
-            kategoriler.add(new Kategori("Çikolata"));
-            kategoriler.add(new Kategori("Büskivi"));
-        }
-        if(gelenReyonIsmi.equals("Et")) {
-            kategoriler.add(new Kategori("Tavuk Eti"));
-            kategoriler.add(new Kategori("Dana Eti"));
-            kategoriler.add(new Kategori("Kuzu Eti"));
-            kategoriler.add(new Kategori("Dana Kıyma"));
-
+        if(gelenKategoriIsmi.equals("Sebze"))
+        {
+            urunler.add(new Urun("biber", 3.0));
+            urunler.add(new Urun("domates", 0.5));
+            urunler.add(new Urun("fasulye", 1.0));
+            urunler.add(new Urun("patlica", 1.0));
         }
 
 
 
-        KategoriAdaptor adaptor=new KategoriAdaptor(this,kategoriler);
-        listViewKategori.setAdapter(adaptor);
+        UrunAdaptor adaptor=new UrunAdaptor(this,urunler);
+        listView.setAdapter(adaptor);
+
+
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_kategoriler, menu);
+        getMenuInflater().inflate(R.menu.menu_urunler, menu);
         return true;
     }
 

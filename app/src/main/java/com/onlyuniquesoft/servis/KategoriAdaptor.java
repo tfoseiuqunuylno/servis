@@ -2,6 +2,7 @@ package com.onlyuniquesoft.servis;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +14,7 @@ import java.util.List;
 /**
  * Created by Mustafa on 12.1.2016.
  */
-public class KategoriAdaptor extends BaseAdapter {
+public class KategoriAdaptor extends BaseAdapter  {
     LayoutInflater layoutInflater;
     List<Kategori> kategoriList;
     Activity activity; //Bunu kullanmamızdaki amac toas mesajı verirken this.activity yi belirtiriz.
@@ -56,7 +57,13 @@ public class KategoriAdaptor extends BaseAdapter {
         isimV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Burada Activity Geçisini saylayacagız.
+
+
+                String gonderilenKategoriIsmi=kategori.getIsim().toString();
+                Intent intent = new Intent(activity, UrunlerActivity.class);
+                intent.putExtra("kategoriIsmi",gonderilenKategoriIsmi); //MainActivity içerisinde  girilen text deki degeri gönderiyor.
+                activity.startActivity(intent);
+
 
 
             }
@@ -64,4 +71,6 @@ public class KategoriAdaptor extends BaseAdapter {
 
         return satirView;
     }
+
+
 }
