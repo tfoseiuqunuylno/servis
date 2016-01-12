@@ -48,6 +48,16 @@
             </meta-data>
             >
         </activity>
+        <activity
+            android:name=".KategorilerActivity"
+            android:label="@string/title_activity_kategoriler"
+            android:parentActivityName=".ReyonActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ReyonActivity" >
+            </meta-data>
+            >
+        </activity>
     </application>
 
 </manifest>
