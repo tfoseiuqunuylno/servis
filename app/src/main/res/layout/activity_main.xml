@@ -8,47 +8,32 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
+    >
 
-    <Button
-        android:id="@+id/buttonGiris"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
-        android:text="GİRİŞ"
-        android:background="#E20808"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:textSize="15sp"
-        />
-
-    <Button
-        android:id="@+id/buttonKaydol"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/buttonGiris"
-        android:layout_centerHorizontal="true"
-        android:text="Kaydol" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/editTextSifre"
+
+
         android:allowUndo="false"
         android:autoText="false"
         android:text="Şifremi Unuttum ?"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/editTextSifre"
+        android:layout_alignRight="@+id/editTextSifre"
+        android:layout_alignEnd="@+id/editTextSifre" />
 
     <EditText
         android:id="@+id/editTextTelefon"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+
         android:ems="10"
 
         android:hint="Telefon"
@@ -56,35 +41,89 @@
 
     <EditText
         android:id="@+id/editTextSifre"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextTelefon"
+        android:layout_alignStart="@+id/editTextTelefon"
         android:layout_below="@+id/editTextTelefon"
-        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="26dp"
         android:ems="10"
         android:hint="Şifre"
         android:inputType="textPassword" />
 
+
     <FrameLayout
-        android:id="@+id/frame"
-        android:layout_width="match_parent"
+        android:id="@+id/frame2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+
         android:layout_centerHorizontal="true"
-        android:background="#E20808"
-        android:padding="3sp">
+        android:layout_marginTop="290dp"
+        android:background="#000000"
+        android:padding="2dp">
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="MobileBim Nedir?"
-            android:textSize="20sp"
-            android:id="@+id/nedir"
-            android:textColor="#E20808"
-            android:background="#fff"
-
-
-            />
+            android:id="@+id/buttonKaydol"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/buttonGiris"
+            android:layout_alignStart="@+id/buttonGiris"
+            android:layout_below="@+id/buttonGiris"
+            android:layout_marginTop="0dp"
+            android:background="#E20808"
+            android:text="Kaydol"
+            android:textColor="#fff"
+            android:textStyle="bold" />
     </FrameLayout>
 
+    <FrameLayout
+        android:id="@+id/frame3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:background="#000000"
+        android:padding="2dp">
+
+        <Button
+            android:id="@+id/buttonGiris"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#E20808"
+            android:text="GİRİŞ"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="LUTFEN GIRIS YAPINIZ"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="-MobilBim Nedir?-"
+        android:id="@+id/nedir"
+        android:textSize="28sp"
+        android:textColor="#FFE20808"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/frame2"
+        android:layout_alignEnd="@+id/frame2" />
 </RelativeLayout>

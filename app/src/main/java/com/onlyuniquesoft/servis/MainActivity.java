@@ -7,9 +7,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-Button nedir,btnGiris,buttonKaydol;
+Button btnGiris,buttonKaydol;
+    TextView nedir;
 //AA
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +19,15 @@ Button nedir,btnGiris,buttonKaydol;
         setContentView(R.layout.activity_main);
         btnGiris=(Button)findViewById(R.id.buttonGiris);
         buttonKaydol=(Button)findViewById(R.id.buttonKaydol);
+        nedir=(TextView)findViewById(R.id.nedir);
+        nedir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intentAna = new Intent(MainActivity.this,MobileBimNedir.class);
+                startActivity(intentAna);
+            }
+        });
         btnGiris.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -26,14 +37,8 @@ Button nedir,btnGiris,buttonKaydol;
         });
 
 
-        nedir=(Button)findViewById(R.id.nedir);
-        nedir.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,MobileBimNedir.class);
-                startActivity(intent);
-            }
-        });
+
+
         buttonKaydol.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
