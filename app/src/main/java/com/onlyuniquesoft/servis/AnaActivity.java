@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class AnaActivity extends AppCompatActivity {
-    Button siparisVer;
+    Button siparisVer,btnIndirim;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,8 +23,17 @@ public class AnaActivity extends AppCompatActivity {
         siparisVer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentSiparisV = new Intent(AnaActivity.this,ReyonActivity.class);
+                Intent intentSiparisV = new Intent(AnaActivity.this, ReyonActivity.class);
                 startActivity(intentSiparisV);
+            }
+        });
+
+        btnIndirim=(Button)findViewById(R.id.buttonIndirimler);
+        btnIndirim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentIndirimV = new Intent(AnaActivity.this,IndirimActivity.class);
+                startActivity(intentIndirimV);
             }
         });
 

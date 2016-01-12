@@ -4,10 +4,10 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <color name="red">#E20808</color>
-    <string name="title_activity_nedir">MobileBim Nedir?</string>
+    <string name="title_activity_nedir">nedir</string>
     <string name="title_activity_ana">ANASAYFA</string>
     <string name="title_activity_reyon">REYONLAR</string>
     <string name="title_activity_kayit">KAYDOL</string>
     <string name="title_activity_kategoriler">KATEGORILER</string>
-    <string name="title_activity_urunler">URUNLER</string>
+    <string name="title_activity_urunler">UrunlerActivity</string>
 </resources>
