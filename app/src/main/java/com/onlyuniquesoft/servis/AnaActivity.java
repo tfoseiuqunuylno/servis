@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class AnaActivity extends AppCompatActivity {
     Button siparisVer,btnIndirim;
@@ -32,8 +33,10 @@ public class AnaActivity extends AppCompatActivity {
         btnIndirim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intentIndirimV = new Intent(AnaActivity.this,IndirimActivity.class);
                 startActivity(intentIndirimV);
+
             }
         });
 

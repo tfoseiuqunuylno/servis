@@ -7,10 +7,10 @@ public class Indirim {
     private String isim;
     private double fiyat;
 
-    public  Indirim(String uisim,double ufiyat)
+    public  Indirim(String iIsim,double iFiyat)
     {
-        isim=uisim;
-        fiyat=ufiyat;
+        isim=iIsim;
+        fiyat=iFiyat;
     }
     public String getIsim() {
         return isim;

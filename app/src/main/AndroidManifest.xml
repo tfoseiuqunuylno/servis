@@ -50,7 +50,7 @@
         </activity>
         <activity
             android:name=".KategorilerActivity"
-            android:label="@string/title_activity_kategoriler"
+            android:label="KATEGORİLER"
             android:parentActivityName=".ReyonActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -60,12 +60,13 @@
         </activity>
         <activity
             android:name=".UrunlerActivity"
-            android:label="URUNLER"
-            android:parentActivityName=".KategorilerActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".KategorilerActivity" >
-            </meta-data>
+            android:label="URUNLER">
+
+        </activity>
+        <activity
+            android:name=".IndirimActivity"
+            android:label="İNDİRİMLER">
+
         </activity>
     </application>
 
