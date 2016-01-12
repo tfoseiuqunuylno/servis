@@ -1,0 +1,224 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.onlyuniquesoft.servis.kayit">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:text="Lutfen kayit yapmak icin asagidaki kutucuklari eksiksiz bir sekilde doldurunuz..."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#E20808"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/resimdikkat" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kullanici Bilgileri"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6"
+
+
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="65dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adiniz:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_above="@+id/soyadtext"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Adiniz"
+        android:ems="10"
+        android:id="@+id/adtext"
+
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/soyadtext"
+        android:layout_alignStart="@+id/soyadtext"
+        android:textSize="15dp"
+        />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soyadiniz:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_above="@+id/teltext"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Soyadiniz"
+        android:ems="10"
+        android:id="@+id/soyadtext"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignRight="@+id/textView"
+        android:textSize="15dp"
+        android:layout_alignEnd="@+id/textView" />
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefon:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_above="@+id/postatext"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/teltext"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignLeft="@+id/soyadtext"
+        android:layout_alignStart="@+id/soyadtext"
+        android:hint="+(90)(___)(___)(____)"
+        android:textSize="15dp"
+        />
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-posta:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:textSize="15dp"
+
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:textSize="15dp"
+        android:id="@+id/postatext"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignLeft="@+id/teltext"
+        android:layout_alignStart="@+id/teltext"
+        android:hint="E-postanizi Girin"
+        />
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sifre:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7" />
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sifre:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:textSize="15dp"
+
+
+        android:layout_below="@+id/textView8"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/sifretext"
+        android:hint="Sifrenizi Girin"
+        android:textSize="15dp"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignLeft="@+id/postatext"
+        android:layout_alignStart="@+id/postatext" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/sifretext2"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignLeft="@+id/sifretext"
+        android:layout_alignStart="@+id/sifretext"
+        android:hint="Sifrenizi Dogrulayin"
+        android:textSize="15dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:text="KAYDOL"
+        android:textSize="20dp"
+        android:background="#E20808"
+        android:textColor="#ffff"
+
+        />
+
+
+</RelativeLayout>

@@ -9,13 +9,14 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-Button nedir,btnGiris;
+Button nedir,btnGiris,buttonKaydol;
 //AA
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btnGiris=(Button)findViewById(R.id.buttonGiris);
+        buttonKaydol=(Button)findViewById(R.id.buttonKaydol);
         btnGiris.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,6 +31,13 @@ Button nedir,btnGiris;
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,MobileBimNedir.class);
+                startActivity(intent);
+            }
+        });
+        buttonKaydol.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,kayit.class);
                 startActivity(intent);
             }
         });
