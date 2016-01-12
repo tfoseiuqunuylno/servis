@@ -8,4 +8,5 @@
     <string name="title_activity_ana">AnaActivity</string>
     <string name="title_activity_reyon">ReyonActivity</string>
     <string name="title_activity_kayit">KAYDOL</string>
+    <string name="title_activity_kategoriler">KategorilerActivity</string>
 </resources>

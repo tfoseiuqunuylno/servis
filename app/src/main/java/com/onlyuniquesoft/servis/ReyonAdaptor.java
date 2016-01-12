@@ -2,6 +2,7 @@ package com.onlyuniquesoft.servis;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,16 +54,19 @@ public class ReyonAdaptor extends BaseAdapter {
         final Reyon reyon=reyonList.get(position);
 
         isimV.setText(reyon.getIsim());
+
+        String reyonIsim=reyon.getIsim().toString();
         isimV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              //Burada Activity Geçisini saylayacagız.
 
+                    Intent intent = new Intent(activity, KategorilerActivity.class);
+                activity.startActivity(intent);
 
             }
         });
 
-        String reyonIsim=reyon.getIsim().toString();
+
         if (reyonIsim.equals("Gıda,Şekerleme"))
             iv.setImageResource(R.drawable.gida);
         if (reyonIsim.equals("Et"))
