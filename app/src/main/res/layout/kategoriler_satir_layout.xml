@@ -6,7 +6,7 @@
 
     <TextView
         android:id="@+id/textViewKategoriIsim"
-        android:layout_width="280dp"
+        android:layout_width="2000dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:layout_weight="1"
@@ -24,7 +24,8 @@
         android:layout_height="20dp"
         android:background="@drawable/ldpi"
         android:layout_gravity="center_vertical"
-        android:paddingRight="5dp"
+        android:paddingRight="0dp"
+
 
         />
 

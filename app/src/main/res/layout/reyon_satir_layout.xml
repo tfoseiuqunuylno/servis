@@ -21,7 +21,7 @@
 
     <TextView
         android:id="@+id/textViewReyonIsım"
-        android:layout_width="240dp"
+        android:layout_width="2000dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:layout_weight="1"
