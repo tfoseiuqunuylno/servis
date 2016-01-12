@@ -4,9 +4,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ReyonActivity extends AppCompatActivity {
-
+    ListView listViewReyon;
+    List<Reyon> reyonlar = new ArrayList<Reyon>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -14,6 +19,26 @@ public class ReyonActivity extends AppCompatActivity {
 
         android.support.v7.app.ActionBar actionBar=getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
+
+        listViewReyon = (ListView) findViewById(R.id.listViewReyonlar);
+
+        reyonlar.add(new Reyon("Meyve Sebze"));
+        reyonlar.add(new Reyon("Gıda,Şekerleme"));
+        reyonlar.add(new Reyon("Et"));
+        reyonlar.add(new Reyon("İçecekler"));
+        reyonlar.add(new Reyon("Süt,Kahvaltılık"));
+        reyonlar.add(new Reyon("Ev,Pet"));
+        reyonlar.add(new Reyon("Deterjan,Temizlik"));
+        reyonlar.add(new Reyon("Bebek,Çoçuk"));
+        reyonlar.add(new Reyon("Kozmaetik"));
+        reyonlar.add(new Reyon("Kırtasıye"));
+        reyonlar.add(new Reyon("Hırdavat"));
+
+
+
+        ReyonAdaptor adaptor=new ReyonAdaptor(this,reyonlar);
+        listViewReyon.setAdapter(adaptor);
+
 
     }
 
