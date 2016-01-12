@@ -119,11 +119,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="-MobilBim Nedir?-"
+        android:text="MobileBim Nedir?"
         android:id="@+id/nedir"
-        android:textSize="28sp"
+        android:textSize="20sp"
         android:textColor="#FFE20808"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/frame2"
-        android:layout_alignEnd="@+id/frame2" />
+        android:layout_alignRight="@+id/textView10"
+        android:layout_alignEnd="@+id/textView10" />
 </RelativeLayout>

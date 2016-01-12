@@ -4,4 +4,11 @@
     tools:context="com.onlyuniquesoft.servis.UrunlerActivity">
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
+    <item
+        android:id="@+id/resim"
+        android:icon="@drawable/bim"
+        android:title="resim"
+        app:showAsAction="always"
+
+        />
 </menu>

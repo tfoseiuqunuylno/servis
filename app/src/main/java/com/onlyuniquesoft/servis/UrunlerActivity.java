@@ -13,32 +13,29 @@ import java.util.List;
 public class UrunlerActivity extends AppCompatActivity {
     ListView listView;
     List<Urun> urunler = new ArrayList<Urun>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_urunler);
 
-        android.support.v7.app.ActionBar actionBar=getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
 
         listView = (ListView) findViewById(R.id.listViewUrunler);
 
-        Intent intent=getIntent(); //Gelen intetnti çekiyoruz.
-        String gelenKategoriIsmi=intent.getStringExtra("kategoriIsmi"); //Veri türündeki verimizi çekiyoruz
+        Intent intent = getIntent(); //Gelen intetnti çekiyoruz.
+        String gelenKategoriIsmi = intent.getStringExtra("kategoriIsmi"); //Veri türündeki verimizi çekiyoruz
 
-        if(gelenKategoriIsmi.equals("Meyve"))
-        {
-            urunler.add(new Urun("kivi", 3.0));
-            urunler.add(new Urun("muz", 0.5));
-            urunler.add(new Urun("elma", 1.0));
-            urunler.add(new Urun("cilek", 1.0));
+        if (gelenKategoriIsmi.equals("Meyve")) {
+            urunler.add(new Urun("Kivi", 3.0));
+            urunler.add(new Urun("Muz", 0.5));
+            urunler.add(new Urun("Elma", 1.0));
+            urunler.add(new Urun("Cilek", 1.0));
         }
-        if(gelenKategoriIsmi.equals("Sebze"))
-        {
-            urunler.add(new Urun("biber", 3.0));
-            urunler.add(new Urun("domates", 0.5));
-            urunler.add(new Urun("fasulye", 1.0));
-            urunler.add(new Urun("patlica", 1.0));
+        if (gelenKategoriIsmi.equals("Sebze")) {
+            urunler.add(new Urun("Biber", 3.0));
+            urunler.add(new Urun("Domates", 0.5));
+            urunler.add(new Urun("Fasulye", 1.0));
+            urunler.add(new Urun("PatlicaN", 1.0));
         }
 
         if(gelenKategoriIsmi.equals("Çikolata"))
@@ -68,10 +65,10 @@ public class UrunlerActivity extends AppCompatActivity {
 
 
 
-
-        UrunAdaptor adaptor=new UrunAdaptor(this,urunler);
+        UrunAdaptor adaptor = new UrunAdaptor(this, urunler);
         listView.setAdapter(adaptor);
-
+        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
     }
 

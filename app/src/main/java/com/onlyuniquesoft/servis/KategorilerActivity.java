@@ -20,15 +20,17 @@ public class KategorilerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_kategoriler);
 
 
-        android.support.v7.app.ActionBar actionBar=getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
+
+
 
         listViewKategori = (ListView) findViewById(R.id.listViewKategoriler);
 
         Intent intent=getIntent(); //Gelen intetnti çekiyoruz.
         String gelenReyonIsmi=intent.getStringExtra("reyonIsmi"); //Veri türündeki verimizi çekiyoruz
 
-
+        android.support.v7.app.ActionBar actionBar=getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.show();
         if(gelenReyonIsmi.equals("Meyve Sebze")) {
             kategoriler.add(new Kategori("Meyve"));
             kategoriler.add(new Kategori("Sebze"));

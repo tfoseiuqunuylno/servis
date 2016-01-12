@@ -33,15 +33,18 @@
             android:layout_width="2000dp"
             android:text="1 ₺"
             android:textSize="15sp"
-            android:textColor="#ff1f1c"
+            android:textColor="#0eb509"
             android:id="@+id/textViewFiyat"
 
             />
     </LinearLayout>
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SATIN AL"
+        android:layout_height="30dp"
+        android:text="URUNE GIT"
+        android:background="#E20808"
+        android:textColor="#fff"
         android:id="@+id/button"
+        android:layout_marginRight="10dp"
         />
 </LinearLayout>
