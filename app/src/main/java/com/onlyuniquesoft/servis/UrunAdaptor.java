@@ -69,9 +69,49 @@ public class UrunAdaptor extends BaseAdapter {
         });
 
 
-
-
         String UrunIsmi=urun.getIsim().toString();
+
+
+        if (UrunIsmi.equals("Bebe Bisküvi"))
+            iv.setImageResource(R.drawable.bebebuskivi);
+        if (UrunIsmi.equals("Biskrem"))
+            iv.setImageResource(R.drawable.biskrem);
+        if (UrunIsmi.equals("Bisküvi"))
+            iv.setImageResource(R.drawable.buskivi);
+        if (UrunIsmi.equals("Kakolu Bisküvi"))
+            iv.setImageResource(R.drawable.kakolu);
+        if (UrunIsmi.equals("Susamlı Bisküvi"))
+            iv.setImageResource(R.drawable.susamli);
+        if (UrunIsmi.equals("Yulaflı Bisküvi"))
+            iv.setImageResource(R.drawable.yulafli);
+        //---------------------------------------
+        if (UrunIsmi.equals("Albeni"))
+            iv.setImageResource(R.drawable.albeni);
+        if (UrunIsmi.equals("Alpella"))
+            iv.setImageResource(R.drawable.alpella);
+        if (UrunIsmi.equals("Altili Dido"))
+            iv.setImageResource(R.drawable.altilidido);
+        if (UrunIsmi.equals("Cokakrem"))
+            iv.setImageResource(R.drawable.cokakrem);
+        if (UrunIsmi.equals("Dankek"))
+            iv.setImageResource(R.drawable.dankek);
+        if (UrunIsmi.equals("Dido"))
+            iv.setImageResource(R.drawable.dido);
+        if (UrunIsmi.equals("Fıstıklı Çikolata Dido"))
+            iv.setImageResource(R.drawable.fistikli);
+        if (UrunIsmi.equals("Goffret"))
+            iv.setImageResource(R.drawable.gofret);
+        if (UrunIsmi.equals("Hobi Sürme Çikolata"))
+            iv.setImageResource(R.drawable.hobi_surmejpg);
+        if (UrunIsmi.equals("Hobi"))
+            iv.setImageResource(R.drawable.hobi);
+        if (UrunIsmi.equals("Onlu Cikolata"))
+            iv.setImageResource(R.drawable.onlugofret);
+        if (UrunIsmi.equals("Sütlü Çikolata"))
+            iv.setImageResource(R.drawable.sutlu);
+        //---------------------------------------
+
+
         if (UrunIsmi.equals("kivi"))
             iv.setImageResource(R.drawable.kivi);
         if (UrunIsmi.equals("muz"))

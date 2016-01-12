@@ -41,6 +41,32 @@ public class UrunlerActivity extends AppCompatActivity {
             urunler.add(new Urun("patlica", 1.0));
         }
 
+        if(gelenKategoriIsmi.equals("Çikolata"))
+        {
+            urunler.add(new Urun("Albeni", 1.0));
+            urunler.add(new Urun("Alpella", 0.5));
+            urunler.add(new Urun("Altili Dido", 1.0));
+            urunler.add(new Urun("Cokakrem", 1.0));
+            urunler.add(new Urun("Dankek", 1.0));
+            urunler.add(new Urun("Dido", 0.5));
+            urunler.add(new Urun("Fıstıklı Çikolata Dido", 1.0));
+            urunler.add(new Urun("Goffret", 1.0));
+            urunler.add(new Urun("Hobi Sürme Çikolata", 1.0));
+            urunler.add(new Urun("Hobi", 1.0));
+            urunler.add(new Urun("Onlu Cikolata", 1.0));
+            urunler.add(new Urun("Sütlü Çikolata", 1.0));
+        }
+        if(gelenKategoriIsmi.equals("Büskivi"))
+        {
+            urunler.add(new Urun("Bebe Bisküvi", 3.0));
+            urunler.add(new Urun("Biskrem", 0.5));
+            urunler.add(new Urun("Bisküvi", 1.0));
+            urunler.add(new Urun("Kakolu Bisküvi", 1.0));
+            urunler.add(new Urun("Susamlı Bisküvi", 1.0));
+            urunler.add(new Urun("Yulaflı Bisküvi", 1.0));
+        }
+
+
 
 
         UrunAdaptor adaptor=new UrunAdaptor(this,urunler);
